@@ -1,0 +1,3 @@
+@import "tailwindcss";
+
+:root{@apply text-white }
