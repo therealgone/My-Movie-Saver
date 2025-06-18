@@ -14,7 +14,7 @@ function MovieCard({ movie }) {
 
   return (
     <div
-      className="bg-black rounded-2xl p-5 border border-zinc-700/60 flex flex-col items-center transition shadow-none hover:shadow-[0_0_10px_white] relative group"
+      className="bg-black rounded-2xl p-5 border border-zinc-700/60 flex flex-col items-center transition shadow-none hover:shadow-[0_0_10px_white] relative group min-h-[420px] justify-between"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
@@ -32,8 +32,8 @@ function MovieCard({ movie }) {
           {isFav ? "❤️" : "♡"}
         </button>
       </div>
-      <div className="mt-2 text-center w-full">
-        <h2 className="text-white text-2xl font-bold drop-shadow-[0_0_10px_white] mb-2">{movie.title}</h2>
+      <div className="mt-2 text-center w-full flex flex-col flex-1 justify-center">
+        <h2 className="text-white text-2xl font-bold drop-shadow-[0_0_10px_white] mb-2 truncate" title={movie.title}>{movie.title}</h2>
         <p className="text-gray-400 drop-shadow-[0_0_6px_gray]">{movie.release_date}</p>
       </div>
       {/* Overlay for description and rating on hover */}
@@ -41,7 +41,7 @@ function MovieCard({ movie }) {
         className={`absolute left-0 right-0 bottom-0 px-4 py-5 bg-black/90 rounded-b-2xl text-white text-center transition-all duration-300 ${hovered ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4 pointer-events-none'}`}
         style={{ minHeight: '120px' }}
       >
-        <div className="font-bold text-lg mb-2">{movie.title}</div>
+        <div className="font-bold text-lg mb-2 truncate" title={movie.title}>{movie.title}</div>
         {movie.overview && <div className="text-sm text-gray-300 mb-2 line-clamp-3">{movie.overview}</div>}
         {movie.vote_average !== undefined && (
           <div className="text-yellow-400 font-bold">⭐ {movie.vote_average}</div>
