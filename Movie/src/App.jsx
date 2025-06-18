@@ -22,7 +22,7 @@ function App() {
   return (
     <>
     <MovieProvider>
-    <div className="min-h-screen w-full bg-gradient-to-br from-gray-900 via-gray-800 to-black flex flex-col items-center justify-center text-white drop-shadow-glow">
+    <div className="min-h-screen w-full bg-gradient-to-t from-black to-zinc-800 flex flex-col text-white drop-shadow-[0_0_10px_white]">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
