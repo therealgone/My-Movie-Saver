@@ -65,8 +65,6 @@ I made this project to learn how to:
 - [GitHub: @therealgone](https://github.com/therealgone)
 - [LinkedIn](https://www.linkedin.com/in/jeevan-baabu-97a19125b)
 
----
 
-## 🦄 Footer
 
-> Made by Jeevan Baabu Murugan · [GitHub](https://github.com/therealgone) · [LinkedIn](https://www.linkedin.com/in/jeevan-baabu-97a19125b)
+
