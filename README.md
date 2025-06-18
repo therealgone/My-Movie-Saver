@@ -6,7 +6,7 @@ A modern, glowing, IMDB-inspired movie browser built with **React** and the **TM
 
 ## 📸 UI Screenshot
 
-![UI Screenshot](REACT%20_%20MOVIE/Movie/UI%20Movie.png)
+![UI Screenshot](Movie/UI Movie.png)
 
 ---
 
