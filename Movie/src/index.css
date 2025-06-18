@@ -1,2 +1,9 @@
 @import "tailwindcss";
 
+.drop-shadow-glow {
+  text-shadow: 0 0 8px #fff, 0 0 16px #fff, 0 0 32px #fff;
+}
+.shadow-glow {
+  box-shadow: 0 0 16px 4px #fff3, 0 0 32px 8px #fff2;
+}
+
